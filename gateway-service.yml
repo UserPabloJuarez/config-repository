@@ -12,6 +12,6 @@ spring:
           enabled: true
       routes:
         - id: reactive-mongo
-          uri: http://localhost:8084/BootCoindb
+          uri: http://localhost:8084/BootCoindbs
           predicates:
-            - Path=/BootCoindb/**
+            - Path=/BootCoindbs/**
