@@ -10,6 +10,6 @@ spring:
           enabled: true
       routes:
         - id: reactive-mongo
-          uri: http://localhost:8089/mongo
+          uri: http://localhost:8084/mongo
           predicates:
             - Path=/mongo/**
