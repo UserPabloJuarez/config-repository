@@ -1,18 +1,11 @@
 server:
   port: 8096
+  
 spring:
-  cloud:
-    stream:
-      default:
-        producer:
-          headerMode: raw
   data:
     mongodb:
-      database: BootCoindb
-      port: 27017
-      host: localhost
-      
-      
-      ##uri: mongodb://localhost:27017/BootCoindb      
-##jpa:
-  ##database-platform: org.hibernate.dialect.H2Dialect
+      uri: mongodb://localhost:27017/BootCoindb
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8082/eureka/
