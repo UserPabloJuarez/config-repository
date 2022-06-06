@@ -13,3 +13,19 @@ spring:
           uri: http://localhost:8084/mongo
           predicates:
             - Path=/mongo/**
+        - id: ws-product
+          uri: http://localhost:8085/condition
+          predicates:
+            - Path=/condition/**
+        - id: ws-product
+          uri: http://localhost:8085/customer
+          predicates:
+            - Path=/customer/**
+        - id: ws-product
+          uri: http://localhost:8085/typeCustomer
+          predicates:
+            - Path=/typeCustomer/**
+        - id: ws-product
+          uri: http://localhost:8085/typeDocument
+          predicates:
+            - Path=/typeDocument/**
