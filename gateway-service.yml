@@ -29,3 +29,19 @@ spring:
           uri: http://localhost:8085/typeDocument
           predicates:
             - Path=/typeDocument/**
+        - id: ws-product-bank
+          uri: http://localhost:8085/product
+          predicates:
+            - Path=/product/**
+        - id: ws-product-bank
+          uri: http://localhost:8085/action
+          predicates:
+            - Path=/action/**
+        - id: ws-product-bank
+          uri: http://localhost:8085/transaction
+          predicates:
+            - Path=/transaction/**
+        - id: ws-product-bank
+          uri: http://localhost:8085/activation
+          predicates:
+            - Path=/activation/**
